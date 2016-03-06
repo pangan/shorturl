@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fyndiq programming assignment - By Amir Mofakhar</title></head>
+<body>
+   <font color="red">
+       {% if error_message==1%}
+          There is not any short url registered for this address!
+       {% elif error_message==2%}
+          There is an internal error!
+       {%endif%}
+   </font>
+<a href ="/">Try Again</a>
+</body>
+</html>

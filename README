@@ -1,0 +1,51 @@
+* Setup
+
+ + requirment : python 2.7
+
+ + Create a directory for this project and copy all files in it.
+
+ + create a virtual environment in that directory and active it
+
+ + run : pip install -r requirments
+
+ + install nosetests
+
+ + check src/webapp/_settings.py for correct path of database
+
+
+* Testing
+
+
+ + move to tests directory and run below command :
+   nosetests -v
+
+* Running
+
+ + move to src/shorturl and run run.py
+
+ + open browser and enter localhost:8080 in the address bar
+
+
+* Tools
+
+  + There is a tool in tools directory to clean and store words from wordlist texxt file into a SQLite file.
+
+  + running make_wordlist.py without any option shows the correct syntax and help.
+
+* File Structure
+
+  fyndiq_shorturl
+  |
+  |_src    all sources
+     |
+     |_ dbase   directory for storing SQLite file
+     |
+     |_ shorturl
+     |     |
+     |     |_ webapp     flask files
+     |          |
+     |          |_templates    html template files
+     |
+     |_ tests   nosetests file
+     |
+     |_ tools   tool to clean up wordlist and make SQLite file
